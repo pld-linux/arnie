@@ -4,10 +4,11 @@ Name:		arnie
 Version:	1.1
 Release:	0.1
 License:	GPL
-Group:		Applications
+Group:		Applications/Archiving
 Source0:	http://furius.ca/downloads/arnie/%{name}-%{version}.tar.bz2
 # Source0-md5:	ec7de82fd1ebb8bb7d3535308c2cee4b
 URL:		http://furius.ca/arnie/
+BuildRequires:	rpm-pythonprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -58,23 +59,19 @@ s± nastêpuj±ce mo¿liwo¶ci:
 - mo¿liwo¶æ odtworzenia kopii zapasowych z dowolnej chwili;
 - przechowywanie archiwów jako zwyk³ych plików GNU tar, dziêki czemu
   mo¿na je otwieraæ rêcznie.
- 
+
 %prep
 %setup -q
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
-install -d $RPM_BUILD_ROOT%{_docdir}/%{name}
-install bin/arnie-archive $RPM_BUILD_ROOT%{_bindir}/arnie-archive 
-install bin/arnie-restore $RPM_BUILD_ROOT%{_bindir}/arnie-restore
-install doc/* $RPM_BUILD_ROOT%{_docdir}/%{name}
+install bin/arnie-* $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{_docdir}/%{name}
-%doc %{_docdir}/%{name}/*
+%doc doc/*
 %attr(755,root,root) %{_bindir}/*
