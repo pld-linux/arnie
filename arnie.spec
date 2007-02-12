@@ -1,5 +1,5 @@
 Summary:	Arnie - simple incremental backup system
-Summary(pl):	Arnie - prosty system przyrostowych kopii zapasowych
+Summary(pl.UTF-8):   Arnie - prosty system przyrostowych kopii zapasowych
 Name:		arnie
 Version:	1.1
 Release:	0.1
@@ -36,29 +36,29 @@ In addition, the following features are provided:
 - The archives are simply stored as GNU tar files, so you can open
   them manually if so desired.
 
-%description -l pl
+%description -l pl.UTF-8
 arnie to bardzo prosty system do wykonywania przyrostowych kopii
-zapasowych na zdalne, nie zaufane hosty z obs³ug± szyfrowanych plików
-na zdalnym ho¶cie. Chocia¿ skrypty s± proste i ¶wie¿e, autorzy wierz±,
-¿e s± potê¿ne, s± aktywnie u¿ywane na w³asnych serwerach autorów, a
-ponadto istnieje zestaw testów do udowodnienia tego. Ponadto dostêpne
-s± nastêpuj±ce mo¿liwo¶ci:
+zapasowych na zdalne, nie zaufane hosty z obsÅ‚ugÄ… szyfrowanych plikÃ³w
+na zdalnym hoÅ›cie. ChociaÅ¼ skrypty sÄ… proste i Å›wieÅ¼e, autorzy wierzÄ…,
+Å¼e sÄ… potÄ™Å¼ne, sÄ… aktywnie uÅ¼ywane na wÅ‚asnych serwerach autorÃ³w, a
+ponadto istnieje zestaw testÃ³w do udowodnienia tego. Ponadto dostÄ™pne
+sÄ… nastÄ™pujÄ…ce moÅ¼liwoÅ›ci:
 
-- automatyczna kompresja archiwów w formacie gzip lub bzip2;
-- automatyczne szyfrowanie archiwów przy u¿yciu klucza GnuPG (po
+- automatyczna kompresja archiwÃ³w w formacie gzip lub bzip2;
+- automatyczne szyfrowanie archiwÃ³w przy uÅ¼yciu klucza GnuPG (po
   podaniu identyfikatora klucza lub nazwy);
-- automatyczne wysy³anie pliku archiwum na zdalny host przy u¿yciu
-  scp; opcja tylko dla wygody - zamiast niej mo¿na przechwyciæ nazwê
-  archiwum i wys³aæ je w dowolnie wybrany sposób (np. ftp);
-- ¶ledzenie i przywracanie zmian uprawnieñ na katalogach i plikach;
-- dzia³anie z pustymi katalogami;
-- dzia³anie z dowi±zaniami symbolicznymi;
-- mo¿liwo¶æ podania alternatywnego po³o¿enia pliku historii;
-- mo¿liwo¶æ u¿ycia wyra¿eñ regularnych do wy³±czania plików z kopii
+- automatyczne wysyÅ‚anie pliku archiwum na zdalny host przy uÅ¼yciu
+  scp; opcja tylko dla wygody - zamiast niej moÅ¼na przechwyciÄ‡ nazwÄ™
+  archiwum i wysÅ‚aÄ‡ je w dowolnie wybrany sposÃ³b (np. ftp);
+- Å›ledzenie i przywracanie zmian uprawnieÅ„ na katalogach i plikach;
+- dziaÅ‚anie z pustymi katalogami;
+- dziaÅ‚anie z dowiÄ…zaniami symbolicznymi;
+- moÅ¼liwoÅ›Ä‡ podania alternatywnego poÅ‚oÅ¼enia pliku historii;
+- moÅ¼liwoÅ›Ä‡ uÅ¼ycia wyraÅ¼eÅ„ regularnych do wyÅ‚Ä…czania plikÃ³w z kopii
   zapasowych;
-- mo¿liwo¶æ odtworzenia kopii zapasowych z dowolnej chwili;
-- przechowywanie archiwów jako zwyk³ych plików GNU tar, dziêki czemu
-  mo¿na je otwieraæ rêcznie.
+- moÅ¼liwoÅ›Ä‡ odtworzenia kopii zapasowych z dowolnej chwili;
+- przechowywanie archiwÃ³w jako zwykÅ‚ych plikÃ³w GNU tar, dziÄ™ki czemu
+  moÅ¼na je otwieraÄ‡ rÄ™cznie.
 
 %prep
 %setup -q
