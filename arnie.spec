@@ -1,5 +1,5 @@
 Summary:	Arnie - simple incremental backup system
-Summary(pl.UTF-8):   Arnie - prosty system przyrostowych kopii zapasowych
+Summary(pl.UTF-8):	Arnie - prosty system przyrostowych kopii zapasowych
 Name:		arnie
 Version:	1.1
 Release:	0.1
